@@ -1,0 +1,32 @@
+<section class="text-black font-bold text-center pb-6">
+  <div class="container px-5 py-4 mx-auto text-3xl text-white">
+    <h1>ASSETS Y ARTISTAS</h1>
+    <div class="flex flex-wrap -m-4 mt-8">
+      <div class="lg:w-2/6 md:w-1/2 p-4 w-full" *ngFor="let artist of artists">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img
+            alt="ecommerce"
+            class="object-cover object-center w-full h-full block transition-transform duration-300 ease-in-out transform hover:lg:scale-150"
+            [src]="artist.image"
+          />
+        </a>
+        <div class="mt-4">
+          <h2 class="text-white text-xs tracking-widest title-font mb-1">
+            ASSETS 3D
+          </h2>
+          <h2 class="text-gray-900 title-font text-lg font-medium">
+            {{ artist.name }}
+          </h2>
+          <p class="mt-1 text-white text-xl">$ {{ artist.price }} COP</p>
+          <div>
+            <button type="submit"
+              class="w-40 bg-purple-500 shadow-lg shadow-indigo-500/50 hover:bg-yellow-400 hover:text-black text-white font-bold  hover:text-black py-2 rounded-full mb-6 text-sm " [routerLink]="['/details', artist.id]">
+              Ver detalles..
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

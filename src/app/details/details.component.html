@@ -1,0 +1,45 @@
+
+
+<div class="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-6 mt-4 pb-6" *ngIf="artists">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6" >
+    <!-- Columna de la Imagen -->
+    <div class="justify-center w-300">
+      <img
+        [src]="artists.image"
+        alt="{{artists.name }}"
+        class="w-full h-64 rounded-xl my-12"
+      />
+    </div>
+
+    <!-- Columna de la Información -->
+    <div class="flex flex-col justify-center">
+      <h2 class="text-3xl font-bold text-gray-800">{{artists.name}}</h2>
+      <p class="text-gray-600 mt-2">
+        {{artists.description}}
+      </p>
+      <p class="text-xl font-semibold text-green-600 mt-4">$ {{artists.price}} COP</p>
+      <div class="grid grid-cols-2 gap-4 items-center">
+  <!-- Columna 1: Usuario y Nacionalidad -->
+  <div>
+    <p class="text-sm font-semibold text-black">{{ artists.user }}</p>
+    <p class="text-sm font-semibold text-black mt-1">{{ artists.nationality }}</p>
+  </div>
+
+  <!-- Columna 2: Imagen del Usuario -->
+  <div class="flex justify-center">
+    <img
+      [src]="artists.user_img"
+      alt="{{ artists.user }}"
+      class="w-20 h-20 rounded-full object-cover "
+    />
+  </div>
+</div>
+      <button 
+      (click)="agregarAlCarrito(artists)"
+      type="submit"
+        class="mt-6 bg-blue-500 shadow-lg shadow-indigo-500/50 hover:bg-yellow-400 hover:text-black text-white font-bold  hover:text-black py-2 rounded-full mb-6 text-sm">
+        Añadir al Carrito
+      </button>
+    </div>
+  </div>
+</div>

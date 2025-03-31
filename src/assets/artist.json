@@ -1,0 +1,95 @@
+
+ [
+    {
+      "id": "1",
+      "name": "Modelado 3D Blender",
+      "description": "El modelado 3D con Blender se refiere al proceso de creación de objetos tridimensionales utilizando Blender, un software de diseño y animación 3D gratuito y de código abierto. Este enfoque permite a los artistas y diseñadores digitales construir modelos detallados y realistas, que pueden usarse en animaciones, videojuegos, efectos visuales, impresión 3D, entre otros.",
+      "price": "30000",
+      "image": "https://cdna.artstation.com/p/assets/images/images/004/747/436/large/hector-moran-hec-infinidude-01.jpg?1485966761",
+      "user": "CESAR RAMOS",
+      "nationality": "ECUADOR",
+      "user_img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": "2",
+      "name": "KitBash 3D Medieval",
+      "description": "El término \"KitBash 3D Oeste\" hace referencia a un conjunto de modelos 3D diseñados específicamente con temática oeste, ideales para crear escenas o entornos de forma rápida y eficiente. Estos kits suelen incluir elementos arquitectónicos como castillos, torres, puentes, casas medievales, y accesorios como armas, carretas, antorchas y más.",
+      "price": "40000",
+      "image": "https://cdna.artstation.com/p/assets/images/images/039/741/506/large/kitbash3d-kb3d-favelas-00-2k.jpg?1626799812",
+      "user": "JORGE ANDRES PEREZ",
+      "nationality": "CHILE",
+      "user_img": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": "3",
+      "name": "KitBash 3D Oeste",
+      "description": "El término \"KitBash 3D Medieval\" hace referencia a un conjunto de modelos 3D diseñados específicamente con temática medieval, ideales para crear escenas o entornos de forma rápida y eficiente. Estos kits suelen incluir elementos arquitectónicos como castillos, torres, puentes, casas medievales, y accesorios como armas, carretas, antorchas y más.",
+      "price": "45000",
+      "image": "https://cdna.artstation.com/p/assets/images/images/050/596/766/large/kitbash3d-outlaw-web-set-gallery-02.jpg?1655224442",
+      "user": "ANDREA LIZETH MEJIA",
+      "nationality": "COLOMBIA",
+      "user_img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": "4",
+      "name": "Modelado 3D Zbrush",
+      "description": "Este modelado en ZBrush representa a Anubis, el dios egipcio de la muerte y la momificación. Con una imponente postura y detalles intrincados, la escultura captura la esencia mística de esta deidad. Su cabeza de chacal esculpida con precisión refleja la divinidad y solemnidad que lo caracterizan, mientras que su armadura y adornos jeroglíficos evocan el esplendor del antiguo Egipto.",
+      "price": "70000",
+      "image": "https://cdna.artstation.com/p/assets/images/images/083/996/290/large/jake-lamb-untitled-thumbnail-fullquality-020.jpg?1737309660",
+      "user": "CARLOS PEREZ",
+      "nationality": "PERU",
+      "user_img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": "5",
+      "name": "Alphas:Detalles y Precisión en Modelado",
+      "description": "Los Alpha Maps en ZBrush son una herramienta esencial para agregar detalles complejos y texturas a los modelos de manera eficiente. Este modelado utiliza mapas de alto contraste en escala de grises para definir relieves, creando superficies detalladas con gran precisión.",
+      "price": "50000",
+      "image": "https://cdna.artstation.com/p/marketplace/presentation_assets/004/248/490/large/file.jpg?1738157389",
+      "user": "ALFONSINA GARCIA",
+      "nationality": "ARGENTINA",
+      "user_img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": "6",
+      "name": "300 Imágenes de Referencia",
+      "description": "Este pack incluye 300 imágenes de referencia en alta resolución (4K) de cabezas masculinas con cicatrices causadas por radiación, diseñadas específicamente para artistas 3D, modeladores y escultores digitales.",
+      "price": "50000",
+      "image": "https://cdnb.artstation.com/p/marketplace/presentation_assets/004/251/269/large/file.jpg?1738313360",
+      "user": "GLORIA PEÑUELA",
+      "nationality": "VENEZUELA",
+      "user_img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": "7",
+      "name": "Referencias modelado Zombie Medieval",
+      "description": "Recomiendo ampliamente este producto a diseñadores de moda y ropa, artistas de dibujos animados y artistas de anime para que les sirvan de referencia e ideas. ¡Los detalles son de altísima calidad y realistas! Dedico muchas horas a crear mis productos con la más alta calidad y una gran variedad.¡He creado muchos paquetes de referencia! Con estilos y temas diversos y prácticos, además de exclusivos, de excelente calidad y gran variedad. Recomiendo ampliamente visitar mis tiendas para ver otros estilos y diferentes versiones de los productos.",
+      "price": "65000",
+      "image": "https://cdna.artstation.com/p/marketplace/presentation_assets/004/378/714/large/file.jpg?1742242605",
+      "user": "ANDREA LIZETH MEJIA",
+      "nationality": "COLOMBIA",
+      "user_img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": "8",
+      "name": "Referencias modelado Marvel",
+      "description": "¡Embárquese en un emocionante viaje al mundo del arte!Hoy en día, la integración de la IA en el arte permite a los artistas superar los límites de la creatividad y mejorar tanto la velocidad como la calidad de sus creaciones. La fusión del arte tradicional con la tecnología moderna abre caminos innovadores para crear diseños e ideas originales, posibilidades que de otro modo serían inalcanzables con los métodos convencionales.Cada pintura y diseño que creamos es el resultado de incontables horas de esfuerzo, ideación y la aplicación creativa de la IA.Con meticulosa atención y pasión artística, estas obras se elaboran para dar vida a los detalles y las emociones de la manera más cautivadora. Esta fusión de arte y tecnología cobra vida gracias a manos expertas y una mente creativa, que reflejan pericia, experiencia y un profundo amor por el arte.",
+      "price": "80000",
+      "image": "https://cdna.artstation.com/p/marketplace/presentation_assets/004/383/922/large/file.jpg?1742477576",
+      "user": "JORGE ANDRES PEREZ",
+      "nationality": "CHILE",
+      "user_img": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+     },
+     {
+      "id": "9",
+      "name": "Referencias de terrenos",
+      "description": "Tanto si eres artista 2D como 3D, contar con la inspiración adecuada es fundamental. Este paquete de referencia definitivo te ofrece más de 650 imágenes PNG de alta calidad del paisaje nórdico de la Ciudad Vikinga: todo lo que necesitas para añadir autenticidad y gran detalle a tu trabajo.",
+      "price": "70000",
+      "image": "https://cdnb.artstation.com/p/marketplace/presentation_assets/004/384/119/large/file.jpg?1742486443",
+      "user": "JORGE ANDRES PEREZ",
+      "nationality": "CHILE",
+      "user_img": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+     }
+  ]
+
+

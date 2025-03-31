@@ -1,0 +1,35 @@
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center mb-6 text-black pb-6">Usuarios Registrados</h1>
+    <div class="border border-white mb-6"></div>
+  
+    <div class="grid lg:grid-cols-2 gap-6">
+      <div *ngFor="let user of users" class="border-b border-gray-300 pb-4 flex items-center">
+        
+        <div>
+          <h2 class="text-2xl font-semibold text-black text to uppercase pb-4">{{ user.nombre }}</h2>
+          <p class="text-gray-200 text-xl pb-4">{{ user.email }}</p>
+          <p class="text-gray-200 text-xl pb-4">Rol : {{user.rol}}</p>
+          
+          <p class="text-gray-200 text-xl pb-4">Nacionalidad: {{ user.nacionalidad }}</p>
+          <p class="text-gray-200 text-xl pb-4">Portafolio: {{ user.urlPortafolio }}</p>
+          <p class="text-gray-200 text-xl pb-4">Usuario desde: {{ user.createdAt | date: 'dd/MM/yyyy' }}</p>
+        <div class="flex space-x-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Actualizar Perfil
+            </button>
+            <button (click)="eliminarUsuario(user._id)" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                Eliminar mi Perfil
+            </button>
+        </div>
+        </div>
+        <div class="w-48 h-48 ml-6">
+          <img [src]="user.imageUrl || 'assets/avatar.png'" alt="User Image" class="w-full h-full object-cover rounded-full">
+        </div>
+    </div>
+      
+    </div>
+  
+    <p *ngIf="users.length === 0" class="text-center text-black col-span-2">
+      No hay usuarios registrados
+    </p>
+  </div>

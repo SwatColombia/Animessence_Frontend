@@ -1,0 +1,160 @@
+<section class="min-h-screen fondo-bg">
+  <!-- <shared-navbar [showOptions]="false"></shared-navbar> -->
+  <div class="flex flex-col px-40 py-3">
+    <div
+      class="flex w-full items-center justify-center lg:justify-between border border-x-stone-300 bg-gradient-to-br from-gray-10 to-gray-50 -14">
+      <!-- Right column container with form -->
+      <div
+        class="sm:w-5/6 md:w-5/9 lg:w-7/9 flex-wrap items-center flex-justify-center pt-2">
+        <h1
+          class="text-center justify-center text-white font-bold text-5xl mb-6 ">
+        Registrate
+        </h1>
+        <form (ngSubmit)="register()" [formGroup]="registerForm" autocomplete="off"
+          class="md:w-6/12 lg:w-10/12 flex-wrap items-center flex-justify-center pl-16">
+          <!-- Email input -->
+          <div class="relative mb-6" data-twe-input-wrapper-init>
+            <h2 class="md:w-2/8 text-white font-semibold text-xl pb-2">
+              Nombre y apellidos
+            </h2>
+            <input type="text"
+              class="peer block min-h-[auto] sm:w-24 md:w-48 lg:w-full rounded border-10 bg-white px-3 py-[4px] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-100"
+              id="nombre" formControlName="nombre" 
+              placeholder="Registra tu nombre completo" />
+            <span *ngIf="
+                registerForm.controls['nombre'].hasError('minlength') &&
+                registerForm.controls['nombre'].touched
+              " class="form-text">Tu nombre debe tener al menos {{ registerForm.controls['nombre'].getError('minlength')?.requiredLength }} caracteres.
+            </span>
+            <span *ngIf="
+                registerForm.controls['nombre'].hasError('required') &&
+                registerForm.controls['nombre'].touched
+              " class="form-text">Tu nombre completo es obligatorio.</span>
+          </div><div class="relative mb-6" data-twe-input-wrapper-init>
+            <h2 class="md:w-2/5 text-white font-semibold text-xl pb-2">
+              Usuario
+            </h2>
+            <input type="text"
+              class="peer block min-h-[auto] sm:w-24 md:w-48 lg:w-full rounded border-10 bg-white px-3 py-[4px] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-100"
+              id="usuario" formControlName="usuario" 
+              placeholder="Crea tu usuario" />
+            <span class="form-text text-red-600" *ngIf="
+                registerForm.controls['usuario'].getError('required') &&
+                registerForm.controls['usuario'].touched
+              " class="form-text">El usuario es obligatorio.
+            </span>
+            <span *ngIf="
+                registerForm.controls['usuario'].getError('minlength') &&
+                registerForm.controls['usuario'].touched
+              " class="form-text">Tu nombre debe tener al menos {{ registerForm.controls['usuario'].getError('minlength')?.requiredLength }} caracteres.
+            </span>
+          </div><div class="relative mb-6" data-twe-input-wrapper-init>
+            <h2 class="md:w-2/5 text-white font-semibold text-xl pb-2">
+              E-mail
+            </h2>
+            <input type="email"
+              class="peer block min-h-[auto] sm:w-24 md:w-48 lg:w-full rounded border-10 bg-white px-3 py-[4px] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-100"
+              id="email" formControlName="email" 
+              placeholder="Correo electronico" />
+            <span class="form-text text-red-600" *ngIf="
+                registerForm.controls['email'].getError('required') &&
+                registerForm.controls['email'].touched
+              " class="form-text">El email es obligatorio.
+            </span>
+            <span *ngIf="
+                registerForm.controls['email'].getError('email') &&
+                registerForm.controls['email'].touched
+              " class="form-text">Ingresa correo electrónico valido
+            </span>
+          </div>
+          <div class="relative mb-6" data-twe-input-wrapper-init>
+            <h2 class="md:w-1/5 text-white font-semibold text-xl pb-2">
+              Contraseña
+            </h2>
+            <input type="password"
+              class="peer block min-h-[auto] sm:w-24 md:w-48 lg:w-full rounded border-10 bg-white px-3 py-[4px] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-100"
+              id="password" formControlName="password" 
+              placeholder="Crea tu contraseña" />
+            <span *ngIf="
+                registerForm.controls['password'].hasError('minlength') &&
+                registerForm.controls['password'].touched
+              " class="form-text">La contraseña debe tener al menos {{ registerForm.controls['password'].getError('minlength')?.requiredLength }} caracteres.
+            </span>
+            <span *ngIf="
+                registerForm.controls['password'].hasError('required') &&
+                registerForm.controls['password'].touched
+              " class="form-text">La contraseña es obligatoria.</span>
+          </div>
+          <div class="relative mb-6" data-twe-input-wrapper-init>
+            <h2 class="md:w-2/5 text-white font-semibold text-xl pb-2">
+              Nacionalidad
+            </h2>
+            <input type="text"
+              class="peer block min-h-[auto] sm:w-24 md:w-48 lg:w-full rounded border-10 bg-white px-3 py-[4px] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-100"
+              id="nacionalidad" formControlName="nacionalidad" 
+              placeholder="Ingresa tu nacionalidad" />
+            <span class="form-text text-red-600" *ngIf="
+                registerForm.controls['nacionalidad'].getError('required') &&
+                registerForm.controls['nacionalidad'].touched
+              " class="form-text">Tu Nacionalidad es obligatorio.
+            </span>
+            <span *ngIf="
+                registerForm.controls['nacionalidad'].getError('minlength') &&
+                registerForm.controls['nacionalidad'].touched
+              " class="form-text">Tu nombre debe tener al menos {{ registerForm.controls['nacionalidad'].getError('minlength')?.requiredLength }} caracteres.
+            </span>
+          </div><div class="relative mb-6 pb-6" data-twe-input-wrapper-init>
+            <h2 class="md:w-2/8 text-white font-semibold text-xl pb-2">
+              Portafolio de Artista
+            </h2>
+            <input type="text"
+              class="peer block min-h-[auto] sm:w-24 md:w-48 lg:w-full rounded border-10 bg-white px-3 py-[4px] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-100"
+              id="urlPortafolio" formControlName="urlPortafolio" 
+              placeholder="Muestra tu arte digital" />
+            <span class="form-text text-red-600" *ngIf="
+                registerForm.controls['urlPortafolio'].getError('required') &&
+                registerForm.controls['urlPortafolio'].touched
+              " class="form-text">Muestranos tu portafolio es obligatorio.
+            </span>
+            <span *ngIf="
+                registerForm.controls['urlPortafolio'].getError('minlength') &&
+                registerForm.controls['urlPortafolio'].touched
+              " class="form-text">Tu portafolio debe tener al menos {{ registerForm.controls['portafolio'].getError('minlength')?.requiredLength }} caracteres.
+            </span>
+          </div>
+
+          <!-- Password input -->
+          
+          
+          <div class="flex justify-center">
+            <button 
+            type="submit"
+              class="w-56 bg-purple-500 hover:bg-yellow-400 text-white font-bold  hover:text-black py-2 rounded-full mb-6">
+              REGISTRARME
+            </button>
+          </div>
+          <!-- Remember me checkbox -->
+          <div class="mb-9 pt-6 items-justify-center">
+           
+                <p
+                class="w-full font-light text-white text-lg items-justify-between focus:outline-none dark:text-primary-400">
+                ¿Ya tengo cuenta?
+                  <a routerLink="../login" id="login"
+                  class="text-white-600 font-extrabold focus:outline-none hover:text-gray-600 dark:text-primary-400">Iniciar sesión
+                  </a>
+                </p>
+                </div>
+            
+        </form>
+      </div>
+      <div
+        class="md:hidden sm:hidden s:hidden lg:block bg-cover lg:ww-4/6 bg-no-repeat pt-10 pb-10 px-5">
+        <img src="../../../../../assets/wallapaper animation .png"
+          alt="Image Description" />
+      </div>
+      <div>
+        <!-- Left column container with background-->
+      </div>
+    </div>
+  </div>
+</section>

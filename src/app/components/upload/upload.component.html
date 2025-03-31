@@ -1,0 +1,71 @@
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-transparent lg:px-16 sm:px-6 py-12 sm:py-12">
+  <!-- Columna del formulario -->
+  <div class="bg-gray-50 p-6 mb-12 rounded-lg shadow-md shadow:bg-gray-200 w-full h-full max-w-md">
+    <h1 class="text-2xl font-bold text-center text-gray-800">Subir Archivo</h1>
+    <form (submit)="onSubmit()" class="space-y-2">
+      <div>
+        <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+        <input type="text" id="name" name="name" [(ngModel)]="formData.name" required
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
+      <div>
+        <label for="description" class="block text-gray-700 font-medium mb-2">Descripción</label>
+        <textarea id="description" name="description" rows="3" [(ngModel)]="formData.description"
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+      </div>
+      <div>
+        <label for="price" class="block text-gray-700 font-medium mb-2">Precio</label>
+        <input type="number" id="price" name="price" [(ngModel)]="formData.price" step="0.01"
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
+      <div>
+        <label for="user" class="block text-gray-700 font-medium mb-2">Usuario</label>
+        <input type="text" id="user" name="user" [(ngModel)]="formData.user" required
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
+      <div>
+        <label for="nationality" class="block text-gray-700 font-medium mb-2">Nacionalidad</label>
+        <input type="text" id="nationality" name="nationality" [(ngModel)]="formData.nationality" required
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
+      <div>
+        <label for="image" class="block text-gray-700 font-medium mb-2">Subir Imagen</label>
+        <input type="file" id="image" name="image" accept="image/*" (change)="onImageChange($event)"
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
+      <div>
+        <label for="file" class="block text-gray-700 font-medium mb-2">Subir Archivo</label>
+        <input type="file" id="file" name="file" [(ngModel)]="formData.file"
+          class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
+      <div>
+        <button type="submit"
+          class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+          Subir
+        </button>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Columna de previsualización -->
+  <div *ngIf="showPreview" class="bg-gray-50 p-6 mb-12 rounded-lg shadow-md shadow:bg-gray-200 w-full h-full max-w-md">
+    <h1 class="text-2xl font-bold text-center text-gray-800 mb-2">Verificar Envío</h1>
+    <div *ngIf="imagePreview">
+      <img [src]="imagePreview" alt="Vista previa de la imagen" class="max-w-full h-auto rounded-lg mb-2">
+    </div>
+    <div class="border p-4 rounded-lg">
+      <p class="text-xl p-2"><strong>Nombre:</strong> {{ formData.name }}</p>
+      <p class="text-xl p-2"><strong>Descripción:</strong> {{ formData.description }}</p>
+      <p class="text-xl p-2"><strong>Precio:</strong> {{ formData.price }}</p>
+      <p class="text-xl p-2"><strong>Usuario:</strong> {{ formData.user }}</p>
+      <p class="text-xl p-2"><strong>Nacionalidad:</strong> {{ formData.nationality }}</p>
+      
+    </div>
+    <div>
+      <button type="button"
+        class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 focus:ring-2 focus:ring-green-400 focus:outline-none">
+        Confirmar Envío
+      </button>
+    </div>
+  </div>
+</div>
