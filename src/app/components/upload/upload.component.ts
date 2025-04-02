@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -20,6 +21,7 @@ export class UploadComponent {
   };
   imagePreview: string | ArrayBuffer | null = null;
   showPreview = false;
+  toastrService: any;
 
   onSubmit() {
     this.showPreview = true;
@@ -38,6 +40,9 @@ export class UploadComponent {
       };
       reader.readAsDataURL(this.formData.image);
     }
+    this.toastrService.success('Los datos de tu Asset han sido enviados!', 'Felicidades!!!');
+    this.toastrService.info('Recibirás un correo de confirmación en breve', 'Atención');
+    
   }
 
 }

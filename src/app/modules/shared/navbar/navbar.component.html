@@ -147,7 +147,7 @@
             Iniciar sesión
           </a>
 
-          <a *ngIf="loginService.checkIsLogged() "routerLink="/animadores3D/users" routerLinkActive="router-link-active"  (click)="verPerfil()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
+          <a *ngIf="loginService.checkIsLogged() "routerLink="/animadores3D/usuariosRegistrados" routerLinkActive="router-link-active"  (click)="verPerfil()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
             Usuarios registrados 
           </a>
           <a (click)="cerrarSesion()" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 cursor-pointer">
