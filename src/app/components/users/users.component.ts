@@ -31,7 +31,7 @@ export class UsersComponent {
       this.usersService.deleteUser(id).subscribe(() => {
         this.users = this.users.filter(user => user._id !== id);
         console.log(id);
-        this.toastr.success('Usuario eliminado', 'Éxito');
+        this.toastr.success('Usuario eliminado', 'Éxito')
       });
     }
   }
