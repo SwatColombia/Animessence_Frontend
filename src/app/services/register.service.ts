@@ -3,13 +3,14 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { tap } from 'rxjs/operators';
+import { environment } from '../environment';
 import { Register } from '../modules/shared/models/register.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RegisterService {
-  private apiUrl = 'http://localhost:4000/api/animadores3D/registrar';
+  private apiUrl = `${environment.apiUrl}/api/animadores3D/registrar`;
 
   constructor( private http : HttpClient,
     private router : Router
