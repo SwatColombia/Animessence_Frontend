@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable, BehaviorSubject, tap} from 'rxjs';
 import { Router } from '@angular/router';
+import { environment } from '../environment';
 import { Login } from '../core/models/login.model';
 @Injectable({
   providedIn: 'root',
 })
 export class LoginService {
-  private apiUrl ='http://localhost:4000/api/animadores3D/login';
+  private apiUrl =`${environment.apiUrl}/api/animadores3D/login`;
 
   public id?: string
   public token?: string;
